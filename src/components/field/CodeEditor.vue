@@ -45,8 +45,7 @@ export default {
             return highlight(this.code, languages[this.language])
         },
         onCodeInput() {
-            this.value = this.code;
-            this.$emit('input', this.value);
+            this.$emit('input', this.code);
         }
     },
 };
