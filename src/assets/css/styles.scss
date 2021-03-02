@@ -1,0 +1,29 @@
+@import
+  'abstracts/variables.scss';
+
+.k-code-editor-input {
+    background: #2d2d2d;
+    color: #ccc;
+    font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;
+    font-size: .9rem;
+    line-height: 1.5;
+    padding: 10px;
+
+    &[data-size="small"] {
+        min-height: 7.5rem;
+    }
+    &[data-size="medium"] {
+        min-height: 15rem;
+    }
+    &[data-size="large"] {
+        min-height: 30rem;
+    }
+    &[data-size="huge"] {
+        min-height: 30rem;
+    }
+
+}
+
+.prism-editor__textarea:focus {
+    outline: none;
+}

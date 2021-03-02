@@ -1,0 +1,37 @@
+{
+  "name": "kirby-code-editor",
+  "version": "0.1.0",
+  "description": "Code editor field for Kirby 3",
+  "main": "index.js",
+  "author": "Kirby Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sylvainjule/kirby-code-editor.git"
+  },
+  "scripts": {
+    "dev": "parcel watch src/index.js --no-source-maps -d ./",
+    "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./"
+  },
+  "posthtml": {
+    "recognizeSelfClosing": true
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11"
+  ],
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "parcel": "^1.12.4",
+    "sass": "^1.32.8",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "prismjs": "^1.23.0",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-prism-editor": "^1.2.2"
+  }
+}
