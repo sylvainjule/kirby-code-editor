@@ -7,7 +7,7 @@
         {
             "name": "Sylvain Julé",
             "email": "contact@sylvain-jule.fr"
-        },
+        }
     ],
     "require": {
         "getkirby/composer-installer": "^1.1"
