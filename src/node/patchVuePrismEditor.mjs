@@ -28,7 +28,7 @@ async function main() {
   let output = source
     .replace(/^import Vue from 'vue';/, "")
     .replace("/*#__PURE__*/Vue.extend(", "")
-    .replace(/\}\)(;\n\nexport)/, "}$1");
+    .replace(/\}\)(;\s+export)/, "}$1");
 
   writeFileSync(srcPath, output, "utf8");
 
