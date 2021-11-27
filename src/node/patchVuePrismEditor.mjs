@@ -4,9 +4,6 @@ import consola from "consola";
 
 const srcPath = "node_modules/vue-prism-editor/dist/prismeditor.esm.js";
 
-/**
- * Extend writer field to support custom inline marks
- */
 async function main() {
   consola.start("Vue Prism Editor patcher");
 
