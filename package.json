@@ -14,16 +14,17 @@
     "build": "kirbyup src/index.js",
     "lint": "eslint \"src/**/*.{js,vue}\"",
     "lint:fix": "npm run lint -- --fix",
-    "format": "prettier --write \"src/**/*.{css,js,vue}\""
+    "format": "prettier --write \"src/**/*.{css,js,vue}\"",
+    "prepare": "node src/node/patchVuePrismEditor.mjs"
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
+    "consola": "^2.15.3",
+    "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "kirbyup": "^0.21.0",
-    "prettier": "^2.4.1",
-    "prismjs": "^1.23.0",
-    "vue": "^2.6.12",
-    "vue-prism-editor": "^1.2.2"
+    "eslint-plugin-vue": "^8.1.1",
+    "kirbyup": "^0.21.1",
+    "prettier": "^2.5.0",
+    "prismjs": "^1.25.0",
+    "vue-prism-editor": "^1.3.0"
   }
 }

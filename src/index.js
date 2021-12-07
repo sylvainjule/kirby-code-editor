@@ -1,7 +1,7 @@
-import CodeEditor from './components/field/CodeEditor.vue'
+import CodeEditor from "./components/field/CodeEditor.vue";
 
-panel.plugin('sylvainjule/code-editor', {
-    fields: {
-        'code-editor': CodeEditor,
-    },
+window.panel.plugin("sylvainjule/code-editor", {
+  fields: {
+    "code-editor": CodeEditor,
+  },
 });
