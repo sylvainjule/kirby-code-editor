@@ -7,7 +7,7 @@ $options = require kirby()->root('kirby') . '/config/fields/textarea.php';
 
 $options = A::merge($options, [
     'props' => [
-        'size'         => function($language = null) {
+        'size'         => function($size = null) {
     		return $size ?? option('sylvainjule.code-editor.size');
         },
         'language'     => function($language = null) {
