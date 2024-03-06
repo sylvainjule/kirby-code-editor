@@ -1,6 +1,6 @@
 # Kirby – Code editor
 
-Code editor field for Kirby 3.
+Code editor field for Kirby 3 and 4.
 
 ![screenshot-code-editor](https://user-images.githubusercontent.com/14079751/109679014-7b043800-7b7b-11eb-8c4e-2ae25da8288d.png)
 
@@ -44,7 +44,7 @@ editor:
 | Name                 | Type               | Default | Options | Description                                                                                                                                                  |
 | -------------------- | ------------------ | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | language          | `String`          | `'css'` | -       | Syntax mode of the editor. See below for available languages                                                                                                                           |
-| size          | `String`          | `'small'` | -       | Min height of the editor. `small | medium | large | huge`                                                                                                                           |
+| size          | `String`          | `'small'` | -       | Min height of the editor. `small / medium / large / huge` |
 | lineNumbers          | `Boolean`          | `true` | -       | Whether to show line numbers.                                                                                                                                |
 | tabSize              | `number`           | `4`       | -       | The number of characters to insert when pressing tab key.                                                                            |
 | insertSpaces              | `boolean`           | `true`       | -       | Whether to use spaces for indentation. If you set it to `false`, you might also want to set `tabSize` to `1` |
