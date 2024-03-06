@@ -1,6 +1,6 @@
 {
     "name": "sylvainjule/code-editor",
-    "description": "Code editor field for Kirby 3",
+    "description": "Code editor field for Kirby 3 and 4",
     "type": "kirby-plugin",
     "license": "MIT",
     "authors": [
