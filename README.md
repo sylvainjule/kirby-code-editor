@@ -1,6 +1,6 @@
 # Kirby – Code editor
 
-Code editor field for Kirby 3 and 4.
+Code editor field for Kirby 3, 4 and 5.
 
 ![screenshot-code-editor](https://user-images.githubusercontent.com/14079751/109679014-7b043800-7b7b-11eb-8c4e-2ae25da8288d.png)
 

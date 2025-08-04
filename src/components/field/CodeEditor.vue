@@ -67,6 +67,31 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "../../assets/css/styles.scss";
+<style>
+.k-code-editor-input {
+  background: light-dark(var(--color-gray-950), var(--input-color-back));
+  color: var(--color-gray-200);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  padding: var(--spacing-2);
+  border-radius: var(--rounded);
+}
+
+.k-code-editor-input[data-size="small"] {
+  min-height: 7.5rem;
+}
+.k-code-editor-input[data-size="medium"] {
+  min-height: 15rem;
+}
+.k-code-editor-input[data-size="large"] {
+  min-height: 30rem;
+}
+.k-code-editor-input[data-size="huge"] {
+  min-height: 45rem;
+}
+
+.prism-editor__textarea:focus {
+  outline: none;
+}
 </style>
