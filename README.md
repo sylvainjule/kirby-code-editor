@@ -21,6 +21,8 @@ Code editor field for Kirby 3, 4 and 5.
 
 ## 1. Installation
 
+> Kirby 3, 4: up to 1.0.3. Kirby 5: 1.1.0+.
+
 Download and copy this repository to ```/site/plugins/code-editor```
 
 Alternatively, you can install it with composer: ```composer require sylvainjule/code-editor```
