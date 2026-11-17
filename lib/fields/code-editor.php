@@ -20,10 +20,10 @@ $options = A::merge($options, [
             return $tabSize ?? option('sylvainjule.code-editor.tabSize');
         },
         'insertSpaces' => function($insertSpaces = null) {
-            return $tabSize ?? option('sylvainjule.code-editor.insertSpaces');
+            return $insertSpaces ?? option('sylvainjule.code-editor.insertSpaces');
         },
         'ignoreTabKey' => function($ignoreTabKey = null) {
-            return $tabSize ?? option('sylvainjule.code-editor.ignoreTabKey');
+            return $ignoreTabKey ?? option('sylvainjule.code-editor.ignoreTabKey');
         },
     ]
 ]);
