@@ -1,7 +1,7 @@
 <template>
   <k-field :input="uid" v-bind="$props" class="k-code-editor-field">
     <prism-editor
-      v-model="code"
+      :value="value || ''"
       class="k-code-editor-input"
       :highlight="highlighter"
       :line-numbers="lineNumbers"
@@ -45,23 +45,14 @@ export default {
     ignoreTabKey: Boolean,
   },
 
-  data() {
-    return {
-      code: "",
-    };
-  },
-
-  mounted() {
-    this.code = this.value;
-  },
-
   methods: {
-    highlighter() {
-      return highlight(this.code, languages[this.language]);
+    highlighter(code) {
+      const language = languages[this.language] ? this.language : 'plain';
+      return highlight(code, languages[language], language);
     },
 
-    onCodeInput() {
-      this.$emit("input", this.code);
+    onCodeInput(code) {
+      this.$emit('input', code);
     },
   },
 };
