@@ -93,6 +93,9 @@ Currently supported languages are:
 * `json`
 * `less`
 * `php`
+* `html`
+* `xml`
+* `svg`
 * `python`
 * `ruby`
 * `scss`
