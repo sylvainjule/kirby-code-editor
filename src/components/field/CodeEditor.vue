@@ -1,7 +1,7 @@
 <template>
-  <k-field :input="uid" v-bind="$props" class="k-code-editor-field">
+  <k-field :input="uid" v-bind="$props" :class="['k-code-editor-field', $attrs.class]" :style="$attrs.style">
     <prism-editor
-      :value="value || ''"
+      :model-value="value || ''"
       class="k-code-editor-input"
       :highlight="highlighter"
       :line-numbers="lineNumbers"
@@ -9,8 +9,7 @@
       :insert-spaces="insertSpaces"
       :ignore-tab-key="ignoreTabKey"
       :data-size="size"
-      @input="onCodeInput"
-    />
+      @update:model-value="onCodeInput" />
   </k-field>
 </template>
 
@@ -34,9 +33,9 @@ import "prismjs/themes/prism-tomorrow.css";
 
 export default {
   components: { PrismEditor },
-
   extends: "k-textarea-field",
-
+  emits: ["input"],
+  inheritAttrs: false,
   props: {
     size: String,
     language: String,
@@ -45,13 +44,11 @@ export default {
     insertSpaces: Boolean,
     ignoreTabKey: Boolean,
   },
-
   methods: {
     highlighter(code) {
       const language = languages[this.language] ? this.language : 'plain';
       return highlight(code, languages[language], language);
     },
-
     onCodeInput(code) {
       this.$emit('input', code);
     },

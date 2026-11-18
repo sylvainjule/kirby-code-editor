@@ -21,7 +21,7 @@ Code editor field for Kirby 3, 4 and 5.
 
 ## 1. Installation
 
-> Kirby 3, 4: up to 1.0.3. Kirby 5: 1.1.0+.
+> Kirby 3, 4: up to 1.0.3. Kirby 5: up to 1.1.1. Kirby 6: 2+.
 
 Download and copy this repository to ```/site/plugins/code-editor```
 

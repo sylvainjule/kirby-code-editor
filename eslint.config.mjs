@@ -4,7 +4,7 @@ import vue from "eslint-plugin-vue";
 
 export default [
 	js.configs.recommended,
-	...vue.configs["flat/vue2-recommended"],
+	...vue.configs["flat/vue3-recommended"],
 	prettier,
 	{
 		rules: {
@@ -22,7 +22,8 @@ export default [
 			"vue/require-prop-types": "error"
 		},
 		languageOptions: {
-			ecmaVersion: 2022
+		  ecmaVersion: 2022,
+		  globals: { window: 'readonly' },
 		}
 	}
 ];
