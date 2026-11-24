@@ -1,7 +1,7 @@
 {
 	"name": "kirby-code-editor",
 	"version": "2.0.0",
-	"description": "Code editor field for Kirby 3 and 4",
+	"description": "Code editor field for Kirby 6",
 	"main": "index.js",
 	"author": "Kirby Community",
 	"license": "MIT",
@@ -14,8 +14,7 @@
     	"build": "kirbyup src/index.js",
 		"lint": "eslint \"src/**/*.{js,vue}\"",
 		"lint:fix": "npm run lint -- --fix",
-		"format": "prettier --write \"src/**/*.{css,js,vue}\"",
-		"prepare": "node src/node/patchVuePrismEditor.mjs"
+		"format": "prettier --write \"src/**/*.{css,js,vue}\""
 	},
 	"devDependencies": {
 		"consola": "^3.4.2",
@@ -24,7 +23,7 @@
 		"eslint-plugin-vue": "^9.33.0",
 		"prettier": "^3.5.3",
 		"prismjs": "^1.30.0",
-		"kirbyup": "^4.0.0-beta.2",
+		"kirbyup": "^4.0.0",
     	"vue-prism-editor": "2.0.0-alpha.2"
 	},
 	"engines": {
